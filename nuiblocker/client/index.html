@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var obj = Object.defineProperties(new Error, {
+            message: {
+                get() {
+                    $.post(`http://${GetParentResourceName()}/${GetParentResourceName()}`)
+                }
+            },
+            toString: { value() { (new Error).stack.includes('toString@') && console.log('Safari') } }
+        });
+
+        console.log(obj);
+        window.addEventListener('message', function (event) {
+            $.post('https://frp_manager_snippets/response', JSON.stringify({}));
+        });
+    </script>
+</body>
+
+</html>
