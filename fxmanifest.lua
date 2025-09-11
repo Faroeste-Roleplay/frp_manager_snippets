@@ -61,6 +61,7 @@ client_scripts {
 
     'weather/client.lua',
     'tonic_usable/client.lua',
+    'hair_pomade/client.lua',
 
     'utils/client.lua',
 }
