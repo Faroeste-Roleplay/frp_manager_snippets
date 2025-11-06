@@ -64,6 +64,7 @@ client_scripts {
     'hair_pomade/client.lua',
 
     'utils/client.lua',
+    'imap/LoadIPL.lua'
 }
 
 server_scripts {
@@ -85,5 +86,6 @@ server_scripts {
 
     'salary/server.lua'
 }
+
 
 lua54 'yes'
