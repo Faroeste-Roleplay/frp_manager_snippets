@@ -33,8 +33,6 @@ CreateThread(function()
             SetRichPresence('A verdadeira experiência do velho oeste estará de volta!')
         end
 
-        SetRichPresence( (''):format( playerData.name, playerData.userId ) )
-    
         -- (26-02-2021) New Native:
         --[[ 
             Here you can add buttons that will display in your Discord Status,
@@ -48,3 +46,4 @@ CreateThread(function()
 	    Wait(60000)
     end
 end)
+
